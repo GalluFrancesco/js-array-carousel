@@ -6,3 +6,9 @@ const paragrafiList = [ 'prova paragrafo uno',
                         'prova paragrafo due',
                         'prova paragrafo tre',
                         'prova paragrafo quattro']
+
+//aggancio lo script agli elementi del DOM
+const titoloHtml = document.querySelector('h1');
+const paragrafoHtml = document.querySelector('p');
+const nextHtml = document.querySelector('.next');
+const previousHtml = document.querySelector('.previous');
