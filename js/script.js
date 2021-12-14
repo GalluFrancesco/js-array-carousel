@@ -36,3 +36,15 @@ nextHtml.addEventListener('click', function () {
     titoloHtml.innerText = titoliList[currentIndex];
     paragrafoHtml.innerText = paragrafiList [currentIndex];
 })
+
+//creo evento onclick sul div previous dell'Html
+previousHtml.addEventListener('click', function () {
+
+    //funziona come il next ma al contrario
+    currentIndex--;
+    if(currentIndex<0){
+        currentIndex=titoliList.length-1;
+    }
+    titoloHtml.innerText = titoliList[currentIndex];
+    paragrafoHtml.innerText = paragrafiList [currentIndex];
+})
