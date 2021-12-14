@@ -16,6 +16,7 @@
     width: 400px;
     margin: 0 48px;
     border: black 1px solid;
+    border-radius: 10px;
 }
 
 h1{
@@ -33,5 +34,14 @@ p{
 .next, .previous{
     height: 40px;
     line-height: 40px;
-    border: black 1px solid;
+}
+
+.fas{
+    transform: scale(3);
+    filter: opacity(0.5);
+    cursor: pointer;
+}
+
+.fas:hover{
+    filter: opacity(1);
 }
