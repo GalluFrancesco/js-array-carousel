@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 48px;
+}
+
+.box-img{
+    width: 400px;
+    height: 250px;
+    margin: 0 48px;
+    border: black 1px solid;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+img{
+    height: 250px;
+    width: 400px;
+    display: inline;
+    object-fit: cover;
+    
+}
+
+.next, .previous{
+    height: 40px;
+    line-height: 40px;
+}
+
+.fas{
+    transform: scale(3);
+    filter: opacity(0.5);
+    cursor: pointer;
+}
+
+.fas:hover{
+    filter: opacity(1);
+}
+
+.opacity{
+    /* filter: opacity(0); */
+    
+}
+
+.transizione{
+    filter: opacity(1);
+    transition: all 1s;
+}
