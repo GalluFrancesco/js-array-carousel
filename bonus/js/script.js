@@ -16,12 +16,13 @@ let currentIndex = 0;
 
 //riempio gli elementi Html con i contenuti di defoult
 imgHtml.src = imgList[currentIndex]
+boxImgHtml.classList.add('transizione')
 
 //creo evento onclick sul div next dell'Html
-nextHtml.addEventListener('click', function () {
+nextHtml.addEventListener('click',async function () {
     
-    //boxImgHtml.classList.remove('transizione')
-
+    boxImgHtml.classList.remove('transizione')
+    
     //ad ogni click aumento il contatore e controllo se
     //ha superato la lunghezze delle mie strutture dati
     //se ha superato lo riporto a zero per far ripartire
@@ -31,14 +32,16 @@ nextHtml.addEventListener('click', function () {
         currentIndex=0;
     }
     imgHtml.src = imgList[currentIndex]
-
-    //boxImgHtml.classList.add('transizione')
     
+    await new Promise(r => setTimeout(r, 10));
+    boxImgHtml.classList.add('transizione')
 })
 
 //creo evento onclick sul div previous dell'Html
-previousHtml.addEventListener('click', function () {
+previousHtml.addEventListener('click',async function () {
 
+    boxImgHtml.classList.remove('transizione')
+    
     //funziona come il next ma al contrario
     currentIndex--;
     if(currentIndex<0){
@@ -46,4 +49,6 @@ previousHtml.addEventListener('click', function () {
     }
     imgHtml.src = imgList[currentIndex]
 
+    await new Promise(r => setTimeout(r, 10));
+    boxImgHtml.classList.add('transizione')
 })

@@ -45,11 +45,13 @@ img{
 }
 
 .opacity{
-    /* filter: opacity(0); */
-    
+     filter: opacity(0); 
+     transition: all 0s;
 }
 
 .transizione{
     filter: opacity(1);
-    transition: all 1s;
+    transition-duration: 3s;
 }
+
+
